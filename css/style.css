@@ -366,7 +366,7 @@ font-size: 18px;
 
 .load-more{
 	margin-bottom: 20px;
-	display: block;
+	display: none;
 }
 footer{
 	text-align: center;

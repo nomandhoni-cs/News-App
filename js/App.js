@@ -1,8 +1,13 @@
 function loadInitialNews() {
-  fetch("https://openapi.programming-hero.com/api/news/category/08")
+    fetch("https://openapi.programming-hero.com/api/news/category/08")
     .then((res) => res.json())
     .then((n) => {
-      document.querySelector(".catagory").innerText = "All News";
+        if (n.data.length > 10) {
+          document.querySelector(".load-more").style.display = "block";
+        } else {
+          document.querySelector(".load-more").style.display = "none";
+        }
+        document.querySelector(".catagory").innerText = "All News";
       document.querySelector(".post-count").innerText = n.data.length;
       news = n.data.slice(0, 10);
       const newsContainer = document.querySelector(".news-container");
@@ -79,22 +84,22 @@ function loadInitialNews() {
                     </div>`;
         newsContainer.appendChild(newsItem);
       }
-      if (n.data.length > 10) {
-        document.querySelector(".load-more").style.display = "block";
-      } else {
-        document.querySelector(".load-more").style.display = "none";
-      }
     });
 }
 
 // Click To Load Function
 function clickToLoad(id, catagory) {
-  document.querySelector(".news-container").innerHTML = "";
-  const url = `https://openapi.programming-hero.com/api/news/category/${id}`;
-  fetch(url)
+    document.querySelector(".news-container").innerHTML = "";
+    const url = `https://openapi.programming-hero.com/api/news/category/${id}`;
+    fetch(url)
     .then((res) => res.json())
     .then((n) => {
-      document.querySelector(".catagory").innerText = catagory;
+        if (n.data.length > 10) {
+          document.querySelector(".load-more").style.display = "block";
+        } else {
+          document.querySelector(".load-more").style.display = "none";
+        }
+        document.querySelector(".catagory").innerText = catagory;
       document.querySelector(".post-count").innerText = n.data.length;
       news = n.data.slice(0, 10);
       const newsContainer = document.querySelector(".news-container");
@@ -170,11 +175,6 @@ function clickToLoad(id, catagory) {
                     </div>
                   </div>`;
         newsContainer.appendChild(newsItem);
-        if (n.data.length > 10) {
-          document.querySelector(".load-more").style.display = "block";
-        } else {
-          document.querySelector(".load-more").style.display = "none";
-        }
       }
     });
 }
