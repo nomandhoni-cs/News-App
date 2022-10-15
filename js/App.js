@@ -178,4 +178,8 @@ function clickToLoad(id, catagory) {
       }
     });
 }
+// Alert 
+function giveAlert(){
+    alert('This feature will come soon')
+}
 loadInitialNews();
