@@ -299,9 +299,41 @@ font-size: 18px;
 
 /* Post area  */
 .post{
-    background: #FFFFFF;
-/* Shadow */
-
-box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
-border-radius: 12px;
+	background: #FFFFFF;
+	/* height: 340px; */
+	margin: 25px 0;
+	box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
+	border-radius: 12px;
+}
+.post .row {
+	margin: 0px 10px;
+	padding: 35px 0px;
+}
+.author-info{
+	float: left;
+}
+.author-image img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.author-name{
+	margin-left: 10px;
+}
+.author-name p{
+	font-size: 16px;
+	color: #2B2C34;
+	line-height: 0.5;
+}
+.author-name .post-date{
+	font-size: 14px;
+}
+.count{
+	font-size: 18px;
+	color:#515151;
+	font-weight: 700;
+	margin-left: 10px;
+}
+.post-link{
+	float:right;
 }
