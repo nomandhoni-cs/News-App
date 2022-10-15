@@ -99,7 +99,7 @@ h2 {
 	font-size: 35px;
 }
 h3 {
-	font-size: 28px;
+	font-size: 24px;
 }
 h4 {
 	font-size: 22px;
@@ -324,7 +324,7 @@ font-size: 18px;
 /* Post area  */
 .post{
 	background: #FFFFFF;
-	/* height: 340px; */
+	height: 360px;
 	margin: 25px 0;
 	box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
 	border-radius: 12px;
@@ -344,10 +344,10 @@ font-size: 18px;
 .author-name{
 	margin-left: 15px;
 }
-.author-name p{
+.author-name p {
 	font-size: 16px;
 	color: #2B2C34;
-	line-height: 0.5;
+	width: 200px;
 }
 .author-name .post-date{
 	font-size: 14px;
@@ -364,6 +364,10 @@ font-size: 18px;
 	margin-top: -10px;
 }
 
+.load-more{
+	margin-bottom: 20px;
+	display: none;
+}
 footer{
 	text-align: center;
 }
