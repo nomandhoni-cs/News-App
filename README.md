@@ -23,3 +23,22 @@ Example: https://openapi.programming-hero.com/api/news/0282e0e58a5c404fbd15261f1
 ### Missing Data: 
 Here total view and author name is null
 https://openapi.programming-hero.com/api/news/2e78e5e0310c2e9adbb6efb1a263e745 
+
+## Deployment
+In order to deploy the website locally, follow the steps mentioned below:
+
+To clone this project run
+
+```bash
+  git clone https://github.com/Sanket1308/Simple-Calculator.git
+```
+Go into the project folder
+
+```bash
+  cd simple-calculator
+```
+To deploy this project run
+
+```bash
+  Run Live Server
+``` 
