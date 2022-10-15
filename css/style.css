@@ -20,6 +20,9 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
+    background-color: #F6F6F6;
+}
+.container{
 }
 .img {
 	max-width: 100%;
@@ -245,9 +248,60 @@ label {
 	background: #444;
 }
 
+/* Navbar */
+.navigation li {
+	display: inline-block;
+	margin: 0px 21px;
+}
+.navigation li a{
+    color: #858585;
+    font-size: 17px;
+}
+.navigation li:hover a{
+    color: #5D5FEF;
+    font-weight: 600;
+}
+.navigation li:active a{
+    border-bottom: 1 px solid #5D5FEF;
+}
+
+hr {
+	border-bottom: 1px solid #CDCDCD;
+	border-top: 0 none;
+	margin: 32px 0;
+	padding: 0;
+}
+.main-menu ul li{
+    display: inline-block;
+    margin: 0 19px;
+}
+.main-menu ul li a{
+    color: #858585;
+    font-size: 17px;
+}
+.main-menu ul li:hover a{
+    color: #5D5FEF;
+    font-weight: 600;
+}
+
+/* Items Area  */
+.items-amount{
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.items-amount p{
+padding: 15px;
+color: black;
+font-size: 18px;
+}
 
 
+/* Post area  */
+.post{
+    background: #FFFFFF;
+/* Shadow */
 
-
-
-
+box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
+border-radius: 12px;
+}
