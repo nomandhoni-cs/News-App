@@ -46,7 +46,6 @@
                 <li onclick="giveAlert()"><a href="#">Blog</a></li>
                 <li><img src="images/Avatar.png" /></li>
               </ul>
-              <!-- <div class="user-profile"></div> -->
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@
           <div class="col-xl-12 text-center main-menu">
             <nav>
               <ul class="catagories">
-                <li onclick="clickToLoad('08', 'Home')"><a href="#">Home</a></li>
+                <li onclick="clickToLoad('08', 'Home')"><a href="">Home</a></li>
                 <li onclick="clickToLoad('01', 'Breaking News')"><a href="#">Breaking News</a></li>
                 <li onclick="clickToLoad('02', 'Regular News')"><a href="#">Regular News</a></li>
                 <li onclick="clickToLoad('03', 'International News')"><a href="#">International News</a></li>
@@ -77,6 +76,7 @@
         </div>
       </div>
     </div>
+    <!-- Second Navbar End  -->
     <!-- Items found -->
     <div class="items-found">
       <div class="container">
@@ -94,8 +94,8 @@
           <div class="col-xl-2"></div>  
           <div class="col-xl-4">
             <div class="sorting-button f-right">
-              <div class="btn btn-fill">Today's Pick</div>
-              <div class="btn btn-norm">Trending</div>
+              <div class="btn btn-fill" onclick="giveAlert()">Today's Pick</div>
+              <div class="btn btn-norm" onclick="giveAlert()">Trending</div>
             </div>
           </div>  
         </div>
@@ -109,7 +109,7 @@
         <div class="load-more">
             <div class="container">
                 <div class="col-xl-12 text-center">
-                    <div class="load-more-btn btn btn-fill" onclick="giveAlert()">Load More</div>
+                    <div class="load-more-btn btn btn-fill" onclick="loadMoreNews()">Load More</div>
                 </div>
             </div>
          </div>
