@@ -18,7 +18,7 @@ function loadInitialNews() {
           // Creating every news element 
         let newsItem = document.createElement("div");
         newsItem.classList.add("post");
-        console.log(element.title);
+        // !console.log(element.title);
         // Check date null or not
         if (element.author.published_date !== null) {
           date = element.author.published_date;
@@ -102,7 +102,8 @@ function clickToLoad(id, catagory) {
         } else {
           document.querySelector(".load-more").style.display = "none";
         }
-        document.querySelector(".catagory").innerText = catagory;
+      document.getElementById('page-title').innerText = 'News Portal - '+ catagory;
+      document.querySelector(".catagory").innerText = catagory;
       document.querySelector(".post-count").innerText = n.data.length;
       news = n.data.slice(0, 10);
           // Selecting Element for appendChild 
@@ -112,7 +113,7 @@ function clickToLoad(id, catagory) {
         // Creating every news element 
         let newsItem = document.createElement("div");
         newsItem.classList.add("post");
-        console.log(element.title);
+        //! console.log(element.title);
         // Check date null or not
         if (element.author.published_date !== null) {
           date = element.author.published_date;
@@ -214,7 +215,7 @@ function loadMoreNews(){
      const element = item;
      let newsItem = document.createElement("div");
      newsItem.classList.add("post");
-     console.log(element.title);
+    //!  console.log(element.title);
      // Check date null or not
      if (element.author.published_date !== null) {
        date = element.author.published_date;
